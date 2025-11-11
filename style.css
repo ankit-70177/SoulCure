@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+header {
+  width: 100%;
+  background-color: lightgreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+
+.logo {
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #1B5E20;
+}
+
+.nav-links a:hover {
+  color: #004D40;
+  border-bottom: 2px solid #004D40;
+}
+
+
+.enquiry-btn {
+  background-color: #C8E6C9;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.enquiry-btn:hover {
+  background-color: #81C784;
+  
+}
+
+
+
