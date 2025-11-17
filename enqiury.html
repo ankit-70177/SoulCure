@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulCure Enquiry Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #e6f2f3;
+        }
+
+        .form-box{
+            width: 350px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .info{
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+
+        textarea{
+            height: 80px;
+            resize: none;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #2b8c85;
+            color: white;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #256f6a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>SoulCure Enquiry</h2>
+
+        <div class="info">
+            Contact us directly:<br>
+            Phone: +91 9837070124<br>
+            Email: support@soulcure.com<br><br>
+            If you need more information, request a call back below 👇
+        </div>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Phone number (optional)">
+
+            <label>Enquiry Type</label>
+            <select>
+                <option>General Consultation</option>
+                <option>Mental Wellness</option>
+                <option>Appointment Booking</option>
+                <option>Other</option>
+            </select>
+
+            <label>Message</label>
+            <textarea placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Request Callback</button>
+        </form>
+    </div>
+
+</body>
+</html>
