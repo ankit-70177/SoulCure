@@ -1,109 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoulCure Enquiry Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoulCure Enquiry Form</title>
+  <link rel="stylesheet" href="index.css">
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background-color: #e6f2f3;
-        }
+ 
+  <style>
+   
+    .form-box {
+      max-width: 350px;
+      margin: 29px auto; 
+      background: #fff;
+      padding: 22px; 
+      border-radius: 8px;
+      border: 1.2px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .form-box label{
+      display:block;
+      margin-bottom:6px; 
+      font-weight:500;
+      letter-spacin: 0.02em; 
+    }
+    .form-box input,
+    .form-box select,
+    .form-box textarea{
+      width:100%;
+      paddin:8px; 
+      margin-bottom:13px;
+      border:1px solid #bbb;
+      border-radius:4.5px; 
+      font-size:15px;
+      outline:none; 
+    }
+    .form-box textarea{
+      height:79px;
+      resize:none;
+    }
+    .form-box button {
+      width:99%; 
+      padding:9px;
+      border:none;
+      background:#2b8c85;
+      color:#fff;
+      font-size:16px; 
+      border-radius: 5px;
+      cursor:pointer;
+      transition: background 0.2s;
+      font-weight:600;
+     
+    }
+    .form-box button:hover {
+      background-color: #257369;
+    }
+    .form-box .info {
+      text-align: center;
+      font-size: 13.7px;
+      margin-bottom: 15px;
+      color: #323;
+    }
 
-        .form-box{
-            width: 350px;
-            margin: 30px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
-
-        h2{
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .info{
-            text-align: center;
-            font-size: 14px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        label{
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, select, textarea{
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 12px;
-            border: 1px solid #bbb;
-            border-radius: 5px;
-        }
-
-        textarea{
-            height: 80px;
-            resize: none;
-        }
-
-        button{
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #2b8c85;
-            color: white;
-            font-size: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: #256f6a;
-        }
-    </style>
-
+    
+  </style>
 </head>
-
 <body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SoulCure</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Home.html">About Us</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="join-team.html">Join our Team</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a class="enquiry-btn" href="enqiury.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2>SoulCure Enquiry</h2>
+      <p>Contact us directly or fill this form for callback, I will reply soon (hopefully):</p>
+    </section>
+    <div class="form-box" style="max-width:350px; margin:30px auto;">
+      <div class="info" style="text-align:center; font-size:14px; margin-bottom:13px; color:#333;">
+        Contact us directly:<br>
+        Phone: +91 9837070124<br>
+        Email: support@soulcure.com<br><br>
+        If you need more information, request a call back below 👇
+      </div>
+      <form>
+        <label for="fullname">Full Name (required)</label>
+        <input id="fullname" type="text" placeholder="Enter you name" required> 
 
-    <div class="form-box">
-        <h2>SoulCure Enquiry</h2>
+        <label for="eml">Email ID</label>  
+        <input id="eml" type="email" placeholder="Enter your email" required>
 
-        <div class="info">
-            Contact us directly:<br>
-            Phone: +91 9837070124<br>
-            Email: support@soulcure.com<br><br>
-            If you need more information, request a call back below 👇
-        </div>
-
-        <form>
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" required>
-
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" required>
-
-            <label>Phone Number</label>
-            <input type="tel" placeholder="Phone number (optional)">
-
-            <label>Enquiry Type</label>
-            <select>
-                <option>General Consultation</option>
-                <option>Mental Wellness</option>
-                <option>Appointment Booking</option>
-                <option>Other</option>
-            </select>
-
-            <label>Message</label>
-            <textarea placeholder="Write your message here..."></textarea>
-
-            <button type="submit">Request Callback</button>
-        </form>
+        <label for="mobile">Phone Number</label>
+        <input id="mobile" type="tel" placeholder="Phone (optional)">
+        
+        <label for="etype">Enquary Type</label> 
+        <select id="etype">
+          <option value="consult">General Consulation</option> 
+          <option value="wellness">Mental Wellness</option>
+          <option value="book">Appoinment Booking</option> 
+          <option value="other">Other</option>
+         </select>
+        
+        <label for="msg">Massage</label> 
+        <textarea id="msg" placeholder="Write your message here..."></textarea>
+        <button type="submit">Request Callbak</button> 
+      </form>
     </div>
-
+  </main>
+  
 </body>
 </html>
