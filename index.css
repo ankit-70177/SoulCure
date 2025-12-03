@@ -215,6 +215,52 @@ main {
 }
 
 
+@media (max-width: 750px) {
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  main {
+    padding-top: 150px;
+  }
+
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-box {
+    flex-direction: column;
+  }
+
+  .gallery-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
 
 
 
