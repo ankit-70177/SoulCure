@@ -260,6 +260,12 @@ main {
   }
 }
 
+.dark {
+  background:grey;
+  color: white;
+}
+
+
 
 
 

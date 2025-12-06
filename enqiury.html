@@ -22,13 +22,13 @@
       display:block;
       margin-bottom:6px; 
       font-weight:500;
-      letter-spacin: 0.02em; 
+     
     }
     .form-box input,
     .form-box select,
     .form-box textarea{
       width:100%;
-      paddin:8px; 
+      
       margin-bottom:13px;
       border:1px solid #bbb;
       border-radius:4.5px; 
@@ -48,7 +48,7 @@
       font-size:16px; 
       border-radius: 5px;
       cursor:pointer;
-      transition: background 0.2s;
+    
       font-weight:600;
      
     }
@@ -91,7 +91,7 @@
         If you need more information, request a call back below 👇
       </div>
       <form>
-        <label for="fullname">Full Name (required)</label>
+        <label for="fullname">Full Name </label>
         <input id="fullname" type="text" placeholder="Enter you name" required> 
 
         <label for="eml">Email ID</label>  
@@ -110,10 +110,11 @@
         
         <label for="msg">Massage</label> 
         <textarea id="msg" placeholder="Write your message here..."></textarea>
-        <button type="submit">Request Callbak</button> 
+        <button type="submit" onclick="Enquiry()">Request Callbak</button> 
       </form>
     </div>
   </main>
+  <script src="enquiry.js"></script>
   
 </body>
 </html>
