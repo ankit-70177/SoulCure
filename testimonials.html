@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+          background-color: #e8f6f3;
+            
+        }
+        .feedback {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 50px;
+            padding-left: 0;
+            max-width: 800px;
+            margin: auto; 
+            margin-top: 50px;
+            margin-left: 15%;
+            
+            
+        }
+
+        .feed {
+            background: #3CB371;
+            padding: 5px;
+            width: 300px;
+            height: 250px; 
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .test_name {
+            display: block;
+            margin-top: 8px;
+            color: rgba(4, 14, 0, 0.609); /* choose any color */
+            font-weight: 600;
+        }
+        img{
+            width: 250px;
+            height: 500;
+            padding-top: 60px;
+            padding: auto;
+            margin-bottom: 0%;
+            margin-left: 40%;
+            margin-top: 50px;
+           border-radius: 10px;
+        }
+        h2{
+            text-align: center;
+            margin-top: 5%;
+            color: darkgreen;
+        }
+       
+        h4{
+            background-color: darkgreen;
+            text-align: center;
+            margin-top: 2%;
+            height: 50px;
+            font-size: x-large;
+        }
+        .feedback-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  margin-left: 25%;
+}
+
+.feedback-box textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border-color: #0277b6;
+  
+  font-size: 15px;
+}
+
+.submit-btn {
+  background-color: #0277b6;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #016089;
+}
+
+
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+      <h1 class="logo">SoulCure</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="join-team.html">Join our Team</a></li>
+        <li><a href="sevices.html">Services</a></li>
+        <li><a class="enquiry-btn" href="enqiury.html">Enquiry</a></li>
+      </ul>
+    </nav>
+</header>
+
+<br>
+ <img src="https://media.istockphoto.com/id/2203022237/vector/asian-person-leaves-good-review-to-doctor-close-up-hand-man-leaving-five-star-review-on.jpg?s=612x612&w=0&k=20&c=V8QNIWUuYrB_kQ47yguFIau9iPY0rB8o0g1r2alrBGM=" alt="">
+
+<div class="feedback">
+    <div class="feed">“The platform is very helpful and easy to use. I found exactly what I needed!” 
+         <span class="test_name">~ <i>Ankit Kumar</i></span>
+        
+    </div>
+    <div class="feed">“Amazing experience! The health resources here truly made a difference.”
+        <span class="test_name">~ <i>Sankalp Tripathi</i></span>
+    </div>
+    <div class="feed">“I feel more confident about my wellness journey thanks to SoulCure.”
+        <span class="test_name">~ <i>Surya Prakash</i></span>
+    </div>
+    <div class="feed">“Simple, clean, and very user-friendly. Highly recommended!”
+        <span class="test_name">~ <i>Krishna Priya</i></span>
+    </div>
+    <div class="feed">“Short, simple tips that bring big changes—SoulCure is amazing!”
+        <span class="test_name">~ <i>Radha Priya</i></span>
+    </div>
+    <div class="feed">“Finally, a wellness space that feels warm, real, and motivating.”
+        <span class="test_name">~ <i>Hari Hari</i></span>
+       
+    </div>
+</div>
+<h2>Please share your Experience</h2>
+<form class="feedback-box">
+  <textarea placeholder="Write your feedback..." rows="4"></textarea>
+  <button type="submit">Submit Feedback</button>
+</form>
+
+
+<h4>© @SoulCure. All Rights Reserved.</h4>
+
+</body>
+</html>
